@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
             new Thread(new Runnable(){
                 @Override
                 public void run() {
-                    Mail m = new Mail("seunome@seuemail.com.br", "suaSenha");
+                    Mail m = new Mail();
 
                     String[] toArr = {email};
                     m.setTo(toArr);
 
-                    m.setFrom("seunome@seuemail.com.br");
+                    m.setFrom(email);
                     m.setSubject("Email de teste do seu app");
                     m.setBody(nome + " recebeu um email com sucesso!");
 
@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     catch(RuntimeException rex){ }//erro ignorado
                     catch(Exception e) {
+                        String erro = e.toString();
                         //tratar algum outro erro aqui
                     }
 

@@ -45,19 +45,19 @@ public class Mail extends javax.mail.Authenticator {
 
 
     public Mail() {
-        _host = "smtp-mail.outlook.com";
+        _host = "smtp.gmail.com";
         _port = "587"; // porta padrão, se não funcionar use 587 ou em último caso a 25
         _sport = "587"; // porta socket padrão, mesmas instruções anteriores
 
-        _user = "sid-bandeira@hotmail.com"; // usuário
-        _pass = "and160783"; // senha
-        _from = "sidnei.suporte@gmail.com;sid-bandeira@hotmail.com"; // email do remetente
+        _user = "sidnei.suporte@gmail.com"; // usuário
+        _pass = "super9390"; // senha
+        _from = "sid-bandeira@hotmail.com"; // email do remetente
         _subject = "teste envio"; // assunto
         _body = "mensagem de teste"; // mensagem html
 
         _debuggable = false;
         _auth = true;
-        _useSsl = false;//gmail usa true
+        _useSsl = true;//gmail usa true
         _isHtmlBody = true;
 
         _multipart = new MimeMultipart();

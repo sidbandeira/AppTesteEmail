@@ -29,6 +29,7 @@
         android:textColor="@android:color/white"
         android:ems="10"
         android:id="@+id/txtNome"
+        android:text="sidnei"
         android:layout_below="@+id/lblNome" />
 
     <TextView
@@ -50,6 +51,7 @@
         android:layout_below="@+id/lblEmail"
         android:textColor="@android:color/white"
         android:ems="10"
+        android:text="sidnei.suporte@gmail.com"
         android:id="@+id/txtEmail" />
 
     <Button
